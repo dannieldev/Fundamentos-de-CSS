@@ -1,0 +1,123 @@
+ul{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+li,
+.secdiv div,.secdiv span,
+.secdivl div,.secdivl span{
+    list-style: none;
+    border: 1px solid green;
+}
+.menu li,.menu2 li,.menu3 li,.menu4 li,.menu5 li,.menu6 li,.menu8 li,
+.secdiv div,.secdiv span, .secdivl div,.secdivl span{
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    text-align: center;
+    padding: 3px;
+}
+
+/*Primer hijo*/
+.menu li:first-child{
+    background: #16A085;
+
+}
+/*Ultimo Hijo*/
+.menu li:last-child{
+    background: rgb(178, 9, 212);
+}
+
+/* Sleccion por numero de hijo*/
+.menu li:nth-child(4){
+    background: rgb(8, 38, 173);
+}
+
+/*Seleccionar Par*/
+.menu2 li:nth-child(even){
+    background: rgb(255, 252, 62);
+}
+/*Seleccionar Impar*/
+.menu3 li:nth-child(odd){
+    background: rgb(255, 252, 62);
+}
+/*Seleccionar cada 3*/
+.menu4 li:nth-child(3n){
+    background: rgb(230, 23, 23);
+}
+/*Seleccionar cada 3 desde 2*/
+.menu5 li:nth-child(3n+2){
+    background: rgb(230, 23, 23);
+}
+/*Seleccionar cada 3 desde el ultimo elemento"*/
+.menu6 li:nth-child(3n){
+    background: rgb(22, 220, 235);
+}
+/*Seleccionar al que tinen un unico hijo*/
+.menu8 li:only-child{
+    background: rgb(0, 6, 90);
+}
+/*Seleccionar primer elemento tipo spam*/
+.secdiv span:first-of-type{
+    background: rgb(178, 9, 212);
+}
+/*Seleccionar el ultimo elemento tipo spam*/
+.secdivl div:last-of-type{
+    background: rgb(255, 252, 62);
+}
+/*Sleccionar un a que temga titulo a[title]*/
+a[title]{
+    font-size: 18px;
+    color: rgb(230, 23, 23);
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Seleccior por enlace a[href]*/
+a[href="http://hola"]{
+    color:rgb(255, 192, 57);
+    font-size: 20px;
+}
+/*Seleccion a todo elemento comiece por determinado valor*/
+a[href^="http"]{
+    color: chartreuse;
+}
+/*Seleccion a todo elemento termine por determinado valor*/
+a[href$=".pdf"]{
+    color: brown;
+}
+/*Seleccion a todo elemento contenga por determinado valor */
+a[href*="/files/"]{
+    color: darkorange;
+}
+/*Agregar elementos con ::before y ::after*/
+p.pimpor{
+    background: darkturquoise;
+}
+p.pimpor::before{
+    content: "****";
+}
+p.pimpor::after{
+    content: "****";
+}
+p.pcu::before{
+    content: "";
+    display: -webkit-inline-box;
+    width: 10px; height: 10px;
+    background: fuchsia;
+}
+/*Seleccionar la primera linea con ::first-line y :first-of-type*/
+div.doc:first-of-type::first-line{
+    font-weight:  small-caps;
+    font-weight: bold;
+}
+/*Seleccionar la primera letra con ::first-letter*/
+p.firl::first-letter{
+    float: left;
+    font-size: 3em;
+    font-family: script;
+    color: midnightblue;
+}
+p.selec::selection{
+    color: orangered;
+    background: black;
+}

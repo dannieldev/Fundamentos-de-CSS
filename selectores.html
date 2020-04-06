@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de CSS</title>
+    <link rel="stylesheet" href="selectores.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <a href="basic.html">Basico</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Hola </h2>
+            <p>Menu</p>
+            <p>Seleccion de hijo y tipo</p>
+            <p>last-child, firth-child, nth-child(4)</p>
+            <ul class="menu">
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+            <p>nth-child(even)  Seleccionar los pares</p>
+            <ul class="menu2">
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+            <p>nth-child(odd)  Seleccionar los impares</p>
+            <ul class="menu3">
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+            <p>nth-child(3n) orden de cada cuanto se selecionara </p>
+            <p>En Este ejemplo cada 3 elementos</p>
+            <ul class="menu4">
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+            <p>nth-child(3n+2) orden de cada cuanto se selecionara </p>
+            <p>En Este ejemplo cada 3 elementos y comenzara desde el 2 elemento </p>
+            <ul class="menu5">
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+            <p>nth-last-child(3n) orden apartir del ultimo elementos</p>
+            <ul class="menu6">
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+            <p>span:first-of-type Seleccionar primer elemento tipo span</p>
+            <section class="secdiv">
+                <div></div>
+                <div></div>
+                <span></span>
+                <div></div>
+                <div></div>
+                <span></span>
+                <div></div>
+            </section>
+            <p>div:last-of-type Seleccionar el ultimo elemento tipo div</p>
+            <section class="secdivl">
+                <div></div>
+                <div></div>
+                <span></span>
+                <div></div>
+                <div></div>
+                <span></span>
+                <div></div>
+            </section>
+            <p>only-child Seleccionar al que tinen un unico hijo</p>
+            <section>
+                <ul class="menu8">
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ul>
+                <ul class="menu8">
+                    <li><a></a></li>
+                </ul>
+                <ul class="menu8">
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ul>
+            </section>
+            <section>
+                <p>Selección por atributo a[title]</p>
+                <a title="Hola">Hola</a>
+                <p>Selección por atributo  a[href="http://hola"]</p>
+                <a href="http://hola">Link de colo</a>
+                <p>Seleccion a todo elemento comience por determinado valor a[href^="http"]</p>
+                <a href="http://">LInk esterno</a>
+                <p>Seleccion a todo elemento acaben por determinado valor a[href$=".pdf"]</p>
+                <a href="http://.pdf">LInk esterno a PDF</a>
+                <p>Seleccion a todo elemento contenga por determinado valor a[href*="/file/"]</p>
+                <a href="/files/d">LInk esterno a archivo</a>
+                <p>Seleccionar elementos que esten vacios p:empty {display: none}</p>
+                <p>Seleccionar elementos cuando no cumpla una condicion div:not(.selected) {display: none}</p>
+                <p>Cambiar algo dependiendo el idioma :lang(en) .bandera{}</p>
+                <p>:root selecciona el mayor elemento</p>
+                <p>:target cuando la url apunta a algo en concreto</p>
+            </section>
+            <section>
+                <p>Agregar elementos con ::before y ::after</p>
+                <p class="pimpor">Este parrafo es importante</p>
+                <p class="pcu">Este parrafo con un cuadrito agregado</p>
+                <p>Seleccionar la primera linea con ::first-line y :first-of-type</p>
+                <div class="doc">
+                    <p>1- Hola hay que selecionar</p>
+                    <p>2- la otra cara de la moneda</p>
+                    <p>3- para obtner un buena imagen de esto</p>
+                </div>
+            </section>
+            <section>
+                <p class="firl">Seleccionar la primera letra con ::first-letter </p>
+                <p>Seleccionar la primera letra</p>
+
+            </section>
+            <p>::SELECTION permite dar color al texto leccionado</p>
+            <p class="selec">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 
+             1500s, when an unknown printer took a galley of type and scrambled it to 
+             make a type specimen book.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <nav>
+            <ul class="2">
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <a href="decoracion.html">Decoración</a>
+                    <a href="basic.html">Basico</a>
+                    <a href="media.html">Multimedia</a>
+                    <a href="selectores.html">Selectores</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
