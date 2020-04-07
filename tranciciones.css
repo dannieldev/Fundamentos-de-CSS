@@ -1,0 +1,58 @@
+div{
+    width: 100px;
+    height: 100px;
+    background: #ff3333;
+    border: 1px solid #ffffff;
+}
+/*Scale*/
+div.scale1:hover{
+    transform: scale(.5);
+}
+div.scale2:hover{
+    transform: scaleX(.5);
+}
+div.scale3:hover{
+    transform: scaleY(1.5);
+}
+/*Rotate*/
+div.rotate1:hover{
+    transform: rotate(45deg);
+}
+div.rotate2:hover{
+    transform: rotate(-45deg);
+    transform-origin: top left;
+}
+/*Translate*/
+div.translate1:hover{
+    transform: translate(10%,5%);
+}
+div.translate2:hover{
+    transform: translate(-20px);
+}
+div.translate3:hover{
+    transform: translate(3em);
+}
+/*Skew*/
+div.skew1:hover{
+    transform: skewX(20deg);
+}
+div.skew2:hover{
+    transform: skewY(20deg) scale(0.8);
+    transform-origin: top left;
+}
+/*Transition*/
+.time{
+    transition: 2s all linear ;
+}
+.transition1:hover{
+    transform: scale(.5);
+    background: crimson;
+}
+.transition2:hover{
+    background: rgb(85, 218, 129);
+}
+.transition3:hover{
+    transform: rotate(36deg);
+}
+  
+
