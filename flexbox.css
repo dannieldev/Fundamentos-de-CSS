@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    flex-direction: row; /* row por defecto*/
+    flex-wrap: wrap; /*Los elementos saltan de linea*/
+
+    /*Alinear elementos dentro de un contenedor*/
+    /*justify-content: flex-start, flex-end, center, 
+    space-beteween, apace-around*/
+    justify-content: center;
+    
+
+    /*Alinear intems en el eje cruzado*/
+    align-items: flex-start;
+
+    /*Alinear cuando hay más de un linea de items*/
+    align-content: stretch;
+}
+
+.elementos{
+    width: 200px;
+    height: 50px;
+    border: 1px solid red;
+    text-align: center;
+    /* flex-grow: 1; 0 por defecto*/
+    /*flex-shrink: 1px;*/
+    /*flex-basis: 150px;*/ /*Anchura minima como min width/*/
+}
+.elementos:last-child{
+    order: -3; /*Cambiar el orden de los elementos */
+}
+.elementos:first-child{
+    align-self: flex-end;
+}
+/*-----------ALING GRID-----------*/
+.container-to{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.elementos-to{
+    width: 200px;
+    height:200px;
+    border: 1px solid rgb(51, 255, 0);
+    text-align: center;
+    float: left;
+}
+/*------------ALING ITEMS CENTER---------------*/
+.container-t1{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(51, 255, 0);
+}
+.elementos-t1{
+    width: 100px;
+    height:100px;
+    border: 1px solid rgb(51, 255, 0);
+    text-align: center;
+}
+/*----------------EXAMPLE Button-------------------*/
+.form{
+    display: flex;
+    width: 500px;
+    border-radius: 30px;
+}
+.campo{
+    background: #ffffff;
+    flex: 1;
+}
+.boot{
+    background: green;
+    color: #ffffff;
+}
