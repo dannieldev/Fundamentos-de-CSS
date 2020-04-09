@@ -54,5 +54,75 @@ div.skew2:hover{
 .transition3:hover{
     transform: rotate(36deg);
 }
-  
+/*Animacion*/
+@keyframes animate1{
+    form{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.animate1{
+    animation: animate1 2s infinite linear;
+}
+.animate2{
+    animation: animate1 1s infinite ease-in-out alternate;
+}
+.animate3{
+    animation: animate1 30ms infinite ease-in-out;
+}
+@keyframes animates2{
+    form{
+        width: 50px;
+        height: 50px;
+    }to{
+        width: 200px;
+        height: 200px;
+    }
+}
+.animate4{
+    animation: animates2 1s infinite;
+}
+/*Box Shadow animation*/
 
+.animate5 a{
+    font-size: 30px;
+    border-radius: 30px;
+    border: solid 2px #1dc20e;
+    padding: 5px 10px;
+    background: rgb(43, 224, 179);
+    color: #948080;
+    text-decoration: none;
+}
+
+@keyframes pulses{
+    form{ box-shadow: 0 0 10px 1px #1dc20e;}
+    to{box-shadow: 0 0 25px 5px #1dc20e;}
+}
+.animate5 a:hover{
+    animation: pulses 1s infinite alternate;
+}
+
+@keyframes shakes{
+   0%{transform:translateX(0);}
+   1%, 3%, 5%{transform:translateX(30px);}
+   2%, 4%, 6%{transform:translateX(-30px);}
+   7%{transform:translateX(0);}
+}
+
+.animate6{
+    margin: 20px;
+    animation: shakes 1s infinite;
+}
+
+@keyframes  hinge{
+    0% {-webkit-transform: rotate(0); -webkit-transform-origin: top left;}
+    20%, 60% { -webkit-transform: rotate(80deg); -webkit-transform-origin: top left;}
+    40%{ -webkit-transform: rotate(60deg); -webkit-transform-origin: top left;}
+    80%{ -webkit-transform:rotate(60deg) translateY(0); 
+    opacity: 1; -webkit-transform-origin: top left;}
+    100%{ -webkit-transform: translateY(700px); opacity: 0;}
+}
+.animate7{
+    animation: hinge 1s ease-in-out;
+}
