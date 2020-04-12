@@ -72,3 +72,57 @@
     background: green;
     color: #ffffff;
 }
+/*Practica flex-box*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.articlebox{
+    margin-top: 100px;
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    font-size: 20px;
+}
+.header{
+    outline: 1pz solid gold;
+    height: 3rem;
+}
+.menu{
+    display: flex;
+}
+.menu-item{
+    list-style: none;
+    flex: 1;
+    outline: 1px solid cyan;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .5s;
+}
+.menu-item:hover{
+    flex:8;
+}
+.containers{
+    display: flex;
+    height: inherit; /*Heredeade su pader la altura*/
+
+}
+.content{
+    outline: 1px solid cyan;
+    /*flex: flex-grow fglex-shrink flex-basis*/
+    flex: 1 /*1 1 auto;*/
+
+}
+.aside{
+    outline: 1px solid magenta;
+    /*flex: flex-grow fglex-shrink flex-basis*/
+    flex: 0 0 25%; /*flex-grow fglex-shrink flex-basis*/
+
+}
+.footer{
+    outline: 1px soli salmon;
+    height: 6rem;
+    /*Hasta Abajo margin-top: auto;*/
+    margin-top: auto; /* Mandar al footer hasta Abajo*/
+}
