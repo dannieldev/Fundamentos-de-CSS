@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+}
+h2{
+    text-align: center;
+    margin: 30px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 1px auto;
+    margin: 30px;
+}
+.art{
+    color: #909E9C;
+    font-weight: 200;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 3%;
+    width: 160px;
+    height: 350px;
+    box-shadow: 1px 0 8px 2px rgb(91, 96, 112);
+    transition: 0.5s;
+
+}  
+.sec{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sec h3{
+    margin: 5px 0px;
+    text-align: center;
+}    
+
+.img-circle{
+    margin: 5px 0px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+}
+
+.sec p{
+    margin: 5px 0px;
+    text-align: justify;
+
+}
+/*HOVER*/
+article:hover .img-circle{
+    width: 120px;
+    height: 120px;
+    transition: 0.4s ease-out ;
+    border-radius: 0%;
+    filter: grayscale(0%);
+}  
+#verano:hover {
+    background-color: #6EDBA4;
+    color: #FFFFFF;
+}
+#invierno:hover {
+    background-color: #6583FE;
+    color: #FFFFFF;
+}
+#otono:hover {
+    background-color: #FE664A;
+    color: #FFFFFF;
+}
+#primavera:hover {
+    background-color: #FE6DAD;
+    color: #FFFFFF;
+}
