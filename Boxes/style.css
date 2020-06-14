@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h2 {
+    text-align: center;
+    line-height: 50px;
+    margin: 40px 0;
+    color: #4c4e61;
+}
+
+header h3 {
+    color: #a3a5ae;
+    width: 80%;
+    text-align: center;
+}
+
+.important {
+    font-weight: bolder;
+}
+
+main {
+    margin: 50px 0;
+}
+
+.box {
+    border: 0;
+    box-shadow: 1px 1px 10px #666;
+    border-radius: 5px;
+    margin: 30px;
+    height: 175px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-top: 6px solid;
+}
+
+/*Clases unidas- por la misma etiqueta*/
+.box.superior {
+    border-color: hsl(180, 62%, 55%);
+}
+
+.box.team {
+    border-color: hsl(0, 78%, 62%);
+}
+
+.box.karma {
+    border-color: hsl(34, 97%, 64%);
+}
+
+.box.calculator {
+    border-color: hsl(212, 86%, 64%);
+}
+
+.box h2 {
+    color: #4c4e61;
+}
+
+.box p {
+    margin: 15px 0;
+    color: #a3a5ae;
+    font-size: 14px
+}
+
+.box img {
+    width: 35px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #999;
+    color: #fff;
+    font-weight: 600;
+}

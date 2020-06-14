@@ -126,3 +126,16 @@ div.skew2:hover{
 .animate7{
     animation: hinge 1s ease-in-out;
 }
+
+/*_______________________________Kodigo_________________________________________*/
+.animate10:hover {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1S;
+    background-color: black;
+}
+.animate11:hover{
+    transition: 0.5s all ease; /*Simplificado*/
+    background-color: yellow;
+    
+}

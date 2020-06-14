@@ -78,5 +78,6 @@ body {
     margin: 100px;
     display: flex;
     justify-content: center;
+    padding: 30px;
     box-shadow: 1px 0px 100px black;
 }
