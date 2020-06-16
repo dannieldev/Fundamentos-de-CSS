@@ -9,16 +9,89 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face{
+    font-family: "fjalla";
+    src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
 /*Estilos generales*/
 *{
     padding: 0;
     margin: 0;
 }
+a{
+    color: #529125;
+    text-decoration: none;
+}
+a:hover{
+    color: #285616;
+    text-decoration: none;
+}
+a:visited{
+    color: #525252;
+    text-decoration: none;
+}
+.red{
+  color: #9b2422;
+}
+.blue{
+    color: #0c73f2;
+}
 body{
     background-image: url(../img/paven.png);
 }
 
+/*Fomularios*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: white;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select:focus{
+    border: 1px solid #70b231;
+    color: black;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border-radius: 2px;
+    border: 1px solid grey;
+    cursor: pointer;
+    width: 60px;
+    padding: 3px;
+    background-color: #70b231;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+   box-shadow: 0px 0px 20px gray;
+}
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active{
+   box-shadow: 0px 0px 3px gray inset;
+   text-shadow: 0px 0px 1px #ccc;
+}
 /*Cabecera*/
 #header{
     min-width: 1024px;
@@ -120,4 +193,142 @@ body{
 }
 #nav > ul > li:hover > ul >li:hover{
     box-shadow: 0px 0px 19px #ccc inset;
+}
+
+/*Contendo*/
+#content{
+    width: 1250px;
+    min-width: 1100px;
+    margin: 0px auto;
+}
+
+/*Barra lateral*/
+
+#aside{
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border:  1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+#aside .widget{
+    display: block;
+    width: 100px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-right: 10px;
+    padding-left: 10px; 
+    font-size: 14px;
+    border-bottom: 1px dashed #3333;
+}
+
+#aside .widget:last-child{
+    margin-bottom: 20px;
+}
+
+#aside h3{
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: #f2f3f2;
+    border:  1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+/*Fomulario barra lateral*/
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;    
+}
+#aside div input[type="button"],
+#aside div input[type="submit"],
+button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#aside input,
+#aside label{
+    margin: 0px auto;
+    text-align: center;  
+}
+#aside li{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+/*Rection*/
+#sections{
+    float: right;
+    width: 75%;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+}
+#sections .titulo{
+    font-family: "fjalla";
+    font-family: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 10px solid #ccc;
+}
+#sections section{
+    margin-top: 40px;
+    background-color:  white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px  #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+#sections .article{
+    margin: 20px 10px;
+}
+#sections .date{
+    color: gray;
+    font-size: 14px;
+}
+section .stickerOne,
+section .stickerTwo{
+    position: absolute;
+    margin-top: -20px;
+    z-index: 0;
+}
+section .stickerTwo{
+    margin-left: 860px;
+}
+
+/*Fottwe*/
+#historico{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#footer{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: #333333;
+    box-shadow: 0px 0px 2px gray;
 }
