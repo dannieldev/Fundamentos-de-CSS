@@ -1,10 +1,4 @@
-$fuente-tipica: sans-serif, Helvetica, Arial;
-$color-fondo: #ccc;
+//Modulos
+@use 'base';
+@use 'encabezado';
 
-body{
-    background-color: $color-fondo;
-}
-
-h1{
-    font-family: $fuente-tipica;
-}
