@@ -1,0 +1,111 @@
+*{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#website{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    width:75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #cccccc;
+} 
+#encabecera{
+    grid-column: 1/6;
+    background: blue;
+    color: white;
+}
+#menu{
+    grid-column: 1/6;
+    background: lightblue;
+    color: black;
+    line-height: 80px;
+}
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+}
+#contenido{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    padding: 10px;
+    background: #eeeeee;
+}
+#contenido article{
+    background: #cccccc;
+    border: 1px solid #555555
+}
+#lateral{
+    grid-column: 5/6;
+    background: orange;
+    color: white;
+}
+#piepagina{
+    grid-column: 1/6;
+   background-color: black;
+   color: white; 
+}
+
+.margen{
+    margin: 30px;
+}
+/*Web Site Areas*/
+#website-areas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas: 
+    "cabecera cabecera cabecera cabecera cabecera"
+    "lateral menu menu menu menu"
+    "contenido contenido contenido contenido contenido "
+    "pie pie pie pie pie";
+    grid-column-gap: 10px;
+    width:75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #cccccc;
+} 
+#encabecera-areas{
+    grid-area: cabecera;
+    background: blue;
+    color: white;
+}
+#menu-areas{
+    grid-area: menu;
+    background: lightblue;
+    color: black;
+    line-height: 80px;
+}
+#menu-areas ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+}
+#contenido-areas{
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    padding: 10px;
+    background: #eeeeee;
+}
+#contenido-areas article{
+    background: #cccccc;
+    border: 1px solid #555555
+}
+#lateral-areas{
+    grid-area: lateral;
+    background: orange;
+    color: white;
+}
+#piepagina-areas{
+    grid-area: pie;
+   background-color: black;
+   color: white; 
+}
